@@ -2,8 +2,10 @@
 This is a private share of datasets
 
 ## Figure 1
-The quantum simulation graph and the neural network graph are manually plotted, to re-scale in the final page, I have snapshotted them to insert as images.
-
+### ppt file
+The quantum simulation graph and the neural network graph are manually plotted, to re-scale in the second last page, I have snapshotted the neural network to insert as an image.
+The final page is also a screenshot.
+### ipynb file
 The pyplotted graph is done with the ipynb file provided, available in jupyter notebook. To show system size difference, I adjusted the colormap. To show parameter difference, I adjusted this demonstration z function.
 
 ```python 
