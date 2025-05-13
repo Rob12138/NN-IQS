@@ -84,3 +84,37 @@ This file import all the data and plot the graph.
 
 Note that the import steps may have a little difference for the two types of files (whole diagram and transition region), and that the directory may need to be adjusted.
 
+## Figure 6 & 8
+These two figures are two demonstrations on the NN-IQS error control skill.
+
+Figure 6 is plotted with this old parameter setting.
+
+```python 
+g = 3
+N= 8
+w = 3
+m = 0
+```
+
+While Figure 8 is an extrapolation to N=12 large system, the parameter setting is.
+
+```python 
+g = 3
+N= 12
+w = 3
+m = 0
+```
+
+These two figures are both trying to up-scale from 48x48 resolution to 192x192 resolution.
+### datasets
+The two datasets contains N = 8 and N = 12 data correspondingly. The four npy files in each folder are used in the ipynb file.
+
+The interpolation in these two figures both refers to bilinear interpolation.
+### ipynb file
+All eight graphs are plotted.
+
+To identify transition region and show the region only. I have written the code to identify transition region on my own.
+It may not be satisfying.
+
+All the file directory may need to be adjusted.
+
