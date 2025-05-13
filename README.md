@@ -6,6 +6,6 @@ The quantum simulation graph and the neural network graph are manually plotted, 
 
 The pyplotted graph is done with the ipynb file provided, available in jupyter notebook. To show system size difference, I adjusted the colormap. To show parameter difference, I adjusted this demonstration z function.
 
-'''python
+```python 
 Z = np.cos(X)*np.sin(Y)
-'''
+```
