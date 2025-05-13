@@ -56,17 +56,17 @@ There are several important points to note about the dataset.
 
 * For each ratio, there are 8 corresponding files.
 
-For example, for x2, you would have 2_times, 2_times interpo, 2_times_cubic, 2_times_bicubic and each of their transition versions.
+  For example, for x2, you would have 2_times, 2_times interpo, 2_times_cubic, 2_times_bicubic and each of their transition versions.
 
-They each stand for NN-IQS prediction, bilinear interpolation, separate cubic interpolation, bicubic interpolation, and their corresponding statistics within the transition region.
+  They each stand for NN-IQS prediction, bilinear interpolation, separate cubic interpolation, bicubic interpolation, and their corresponding statistics within the transition region.
 
 * For the whole phase diagram files, relative error is stored in a 2D array form.
 
-Each point on the phase diagram is error estimated separately.
+  Each point on the phase diagram is error estimated separately.
 
-For the transition region files, the wanted data points are further picked from the array to form a 1D list.
+  For the transition region files, the wanted data points are further picked from the array to form a 1D list.
 
-The difference can also be seen from the import in the ipynb file.
+  The difference can also be seen from the import in the ipynb file.
 ### ipynb file
 This file import all the data and plot the graph.
 
