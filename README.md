@@ -132,3 +132,5 @@ All file directory may need to be adjusted.
 
 The bold words 'Whole Diagram' and 'Transition Region' on the Figure in overleaf are added through ppt.
 
+## Tables
+The current tables are established on Latex directly.
