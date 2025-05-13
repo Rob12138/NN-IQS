@@ -20,6 +20,8 @@ Figure 2 is a demonstration phase diagram.
 
 While Figure 3 is a theoretical calculation cited from literature with mu set to zero. 
 Therefore the Figure 3 contour is a straight line and do not vary with mu.
+
+Resolution used in these two figures is 50x50.
 ### py file
 The py file include all the functions needed in the ipynb file. It is constructed from 
 the spin model provided in the paper.
@@ -42,6 +44,8 @@ This is also consistent with our parameter range : w/g within [0.3, 1.5].
 Figure 4 is to show the training curve of the neural network.
 
 It includes training loss, test loss, and test psnr.
+
+Resolution used to generate the training and validation dataset is 196x196.
 ### csv file
 The csv file recorded the three values associated with each epoch.
 ### ipynb file
@@ -49,8 +53,8 @@ The ipynb file simply serves as a graph plot. The file directory might need to b
 
 ## Figure 5
 Figure 5 is two box plots to show the relative error distribution.
-### dataset
-There are several important points to note about the dataset.
+### error dataset
+There are several important points to note about the error dataset.
 
 * The dataset contains relative error for all up-scaling ratios. That is, seen ratios x2, x3, x4, and unseen ratios x6, x8, x10.
 
@@ -67,7 +71,16 @@ There are several important points to note about the dataset.
   For the transition region files, the wanted data points are further picked from the array to form a 1D list.
 
   The difference can also be seen from the import in the ipynb file.
+
+* We keep the input resolution as 48x48.
+
+  x2, x3, and x4 are tested with the original 196x196 resolution dataset.
+
+  While x6, x8, and x10 are tested with a newly generated 480x480 resolution dataset.
+
+  The number of error files will be different therefore.
 ### ipynb file
 This file import all the data and plot the graph.
 
 Note that the import steps may have a little difference for the two types of files, and that the directory may need to be adjusted.
+
