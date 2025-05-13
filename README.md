@@ -52,15 +52,15 @@ Figure 5 is two box plots to show the relative error distribution.
 ### dataset
 There are several important points to note about the dataset.
 
--The dataset contains relative error for all up-scaling ratios. That is, seen ratios x2, x3, x4, and unseen ratios x6, x8, x10.
+*The dataset contains relative error for all up-scaling ratios. That is, seen ratios x2, x3, x4, and unseen ratios x6, x8, x10.
 
--For each ratio, there are 8 corresponding files.
+*For each ratio, there are 8 corresponding files.
 
 For example, for x2, you would have 2_times, 2_times interpo, 2_times_cubic, 2_times_bicubic and each of their transition versions.
 
 They each stand for NN-IQS prediction, bilinear interpolation, separate cubic interpolation, bicubic interpolation, and their corresponding statistics within the transition region.
 
--For the whole phase diagram files, relative error is stored in a 2D array form.
+*For the whole phase diagram files, relative error is stored in a 2D array form.
 
 Each point on the phase diagram is error estimated separately.
 
