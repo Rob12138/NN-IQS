@@ -82,5 +82,5 @@ There are several important points to note about the error dataset.
 ### ipynb file
 This file import all the data and plot the graph.
 
-Note that the import steps may have a little difference for the two types of files, and that the directory may need to be adjusted.
+Note that the import steps may have a little difference for the two types of files (whole diagram and transition region), and that the directory may need to be adjusted.
 
