@@ -37,3 +37,13 @@ w = 3
 m = 0
 ```
 This is also consistent with our parameter range : w/g within [0.3, 1.5].
+
+## Figure 4
+Figure 4 is to show the training curve of the neural network.
+
+It includes training loss, test loss, and test psnr.
+### csv file
+The csv file recorded the three values associated with each epoch.
+### ipynb file
+The ipynb file simply serves as a graph plot. The file directory might need to be adjusted.
+
