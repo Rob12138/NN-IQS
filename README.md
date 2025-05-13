@@ -118,3 +118,17 @@ It may not be satisfying.
 
 All the file directory may need to be adjusted.
 
+## Figure 7
+Figure 7 is done by separating the original training and validation datasets.
+
+Only part of w values are used in training and validation process. The rest unseen ones are used in the test.
+### error dataset
+The instruction of this error dataset is similar to that of Figure 5, 
+just that only x2, x3, x4 are included this time.
+### ipynb file
+The python file is also similar.
+
+All file directory may need to be adjusted.
+
+The bold words 'Whole Diagram' and 'Transition Region' on the Figure in overleaf are added through ppt.
+
