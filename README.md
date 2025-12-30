@@ -10,6 +10,7 @@ We proposed a hybrid model named Neural Network Facilitated Quantum Simulation m
 It utilizes a neural network to implicitly represent a famous quantum system, the Schwinger Model.
 After training with discrete resuts from quantum simulation, our NN-IQS model can easily generate extra samples on the Schwinger Model phase diagram with arbitrary resolution and high precision.
 It can even predict sample points outside the training parameter range and beyond system size limitation.
+The model is highly flexible and can be easily generalized to other quantum systems.
 
 
 
