@@ -145,7 +145,7 @@ def main(config_, save_path):
 
     header = ['epoch', 'train_loss', 'test_loss', 'test_psnr']
     filename = 'demonstration_data.csv'
-    filepath = 'C:\\Users\\robwa\\liif-main\\'
+    filepath = ''
     filefull = filepath + filename
 
     data = []
@@ -244,4 +244,5 @@ if __name__ == '__main__':
     #save_path = os.path.join(save_name, '\save')
     save_path = os.path.join(save_name, '\save_p')
     
+
     main(config, save_path)
