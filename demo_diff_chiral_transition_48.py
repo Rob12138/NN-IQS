@@ -251,8 +251,9 @@ if __name__ == '__main__':
                     cubic_transition_error.append(diff_cubic[i][j])
         
         
-        #diffpath = 'C:\\Users\\robwa\\liif-main\\datasets\\Schwinger\\test\\diff_input48\\' + str(args.multiple) + '_times_transition_interpo\\'
-        diffpath = 'C:\\Users\\robwa\\liif-main\\datasets\\Schwinger\\test\\partial_w\\' + str(args.multiple) + '_times_transition_cubic\\'
+        #diffpath = 'datasets\\Schwinger\\test\\diff_input48\\' + str(args.multiple) + '_times_transition_interpo\\'
+        diffpath = 'datasets\\Schwinger\\test\\partial_w\\' + str(args.multiple) + '_times_transition_cubic\\'
         diffname = filename
         difffull = diffpath + diffname
+
         np.save(difffull, np.array(cubic_transition_error))
