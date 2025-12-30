@@ -1,22 +1,19 @@
 # NN-IQS
+
 This is the repository for article AI-ehanced Quantum Simulation of Schwinger Model
 
 ![plot](high_res_figure1.png)
 
-## Figure 1
-Figure 1 is a show of general workflow of this project.
-### ppt file
-The quantum simulation graph and the neural network graph are manually plotted, to re-scale in the second last page, I have snapshotted the neural network to insert as an image.
+## Introduction
 
-The final page is also a screenshot.
-### ipynb file
-The pyplotted graphs are done with the ipynb file provided, available in jupyter notebook.
+We proposed a hybrid model named Neural Network Facilitated Quantum Simulation model, or the NN-IQS model.
+It utilizes a neural network to implicitly represent a famous quantum system, the Schwinger Model.
+After training with discrete resuts from quantum simulation, our NN-IQS model can easily generate extra samples on the Schwinger Model phase diagram with arbitrary resolution and high precision.
+It can even predict sample points outside the training parameter range and beyond system size limitation.
 
-To show system size difference, I adjusted the colormap. To show parameter difference, I adjusted this demonstration z function.
 
-```python 
-Z = np.cos(X)*np.sin(Y)
-```
+
+
 ## Figure 2 & 3
 Figure 2 is a demonstration phase diagram. 
 
