@@ -2,8 +2,8 @@ test_dataset:
   dataset:
     name: paired-image-folders
     args:
-      root_path_1: C:\Users\robwa\liif-main\datasets\Schwinger\test\10inp
-      root_path_2: C:\Users\robwa\liif-main\datasets\Schwinger\test\10gt
+      root_path_1: datasets\Schwinger\test\10inp
+      root_path_2: datasets\Schwinger\test\10gt
       split_file: ./load/celebAHQ/split.json
       split_key: val
       cache: in_memory
@@ -14,4 +14,5 @@ test_dataset:
 
 data_norm:
   inp: {sub: [0.5], div: [0.5]}
+
   gt: {sub: [0.5], div: [0.5]}
