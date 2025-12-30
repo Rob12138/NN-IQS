@@ -51,7 +51,7 @@ conda install yaml
 Clone everything from this repository and cd to your real directory.
 
 ```python
-git clone https://github.com/Rob12138/Polymatch.git
+git clone https://github.com/Rob12138/NN-IQS.git
 cd [your directory]
 ```
 
