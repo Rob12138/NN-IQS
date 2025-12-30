@@ -2,7 +2,7 @@ train_dataset:
   dataset:
     name: image-folder
     args:
-      root_path: C:\Users\robwa\liif-main\datasets\Schwinger\train
+      root_path: datasets\Schwinger\train
       repeat: 20
       cache: in_memory
   wrapper:
@@ -18,7 +18,7 @@ val_dataset:
   dataset:
     name: image-folder
     args:
-      root_path: C:\Users\robwa\liif-main\datasets\Schwinger\validation
+      root_path: datasets\Schwinger\validation
       first_k: 10
       repeat: 160
       cache: in_memory
@@ -58,3 +58,4 @@ multi_step_lr:
 
 epoch_val: 1
 epoch_save: 100
+
