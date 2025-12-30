@@ -66,8 +66,9 @@ if __name__ == '__main__':
   
     pred_split_antisigma = -np.log(np.divide(one_array, pred_split) - one_array)
 
-    #pred_path = 'C:\\Users\\robwa\\liif-main\\datasets\\Schwinger\\test\\low_resolution_upscale_demo\\'
-    pred_path = 'C:\\Users\\robwa\\liif-main\\datasets\\Schwinger\\test\\rainbow\\'
+    #pred_path = 'datasets\\Schwinger\\test\\low_resolution_upscale_demo\\'
+    pred_path = 'datasets\\Schwinger\\test\\rainbow\\'
     pred_name = args.output
     pred_full = pred_path + pred_name
     np.save(pred_full, pred_split_antisigma)
+
