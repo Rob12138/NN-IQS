@@ -1,6 +1,8 @@
 # NN-IQS
 This is the repository for article AI-ehanced Quantum Simulation of Schwinger Model
 
+![plot](high_res_figure1.png)
+
 ## Figure 1
 Figure 1 is a show of general workflow of this project.
 ### ppt file
