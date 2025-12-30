@@ -1,26 +1,3 @@
-""" Train for generating LIIF, from image to implicit representation.
-
-    Config:
-        train_dataset:
-          dataset: $spec; wrapper: $spec; batch_size:
-        val_dataset:
-          dataset: $spec; wrapper: $spec; batch_size:
-        (data_norm):
-            inp: {sub: []; div: []}
-            gt: {sub: []; div: []}
-        (eval_type):
-        (eval_bsize):
-
-        model: $spec
-        optimizer: $spec
-        epoch_max:
-        (multi_step_lr):
-            milestones: []; gamma: 0.5
-        (resume): *.pth
-
-        (epoch_val): ; (epoch_save):
-"""
-
 import argparse
 import os
 
