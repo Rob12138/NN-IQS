@@ -52,7 +52,7 @@ Clone everything from this repository and cd to your real directory.
 
 ```python
 git clone https://github.com/Rob12138/NN-IQS.git
-cd [your directory]
+cd [folder directory]
 ```
 
 Verify that your GPU is working fine with CUDA by running in python.
@@ -64,91 +64,23 @@ torch.cuda.is_available()
 Run train_nniqs.py after acquiring the needed datasets.
 
 ```python
-python train_nniqs.py --config configs/train_schwinger/train_schwinger.yaml --gpu 0
+python train_nniqs.py --config configs\train_schwinger\train_schwinger.yaml --gpu 0
 ```
 
 
 
-## Figure 5
-Figure 5 is two box plots to show the relative error distribution.
-### error dataset
-There are several important points to note about the error dataset.
+## Test training result
 
-* The dataset contains relative error for all up-scaling ratios. That is, seen ratios x2, x3, x4, and unseen ratios x6, x8, x10.
+After acquiring different trained models, run one of the test files to test performance.
 
-* For each ratio, there are 8 corresponding files.
-
-  For example, for x2, you would have 2_times, 2_times interpo, 2_times_cubic, 2_times_bicubic and each of their transition versions.
-
-  They each stand for NN-IQS prediction, bilinear interpolation, separate cubic interpolation, bicubic interpolation, and their corresponding statistics within the transition region.
-
-* For the whole phase diagram files, relative error is stored in a 2D array form.
-
-  Each point on the phase diagram is error estimated separately.
-
-  For the transition region files, the wanted data points are further picked from the array to form a 1D list.
-
-  The difference can also be seen from the import in the ipynb file.
-
-* We keep the input resolution as 48x48.
-
-  x2, x3, and x4 are tested with the original 196x196 resolution dataset.
-
-  While x6, x8, and x10 are tested with a newly generated 480x480 resolution dataset.
-
-  The number of error files will be different therefore.
-### ipynb file
-This file import all the data and plot the graph.
-
-Note that the import steps may have a little difference for the two types of files (whole diagram and transition region), and that the directory may need to be adjusted.
-
-## Figure 6 & 8
-These two figures are two demonstrations on the NN-IQS error control skill.
-
-Figure 6 is plotted with this old parameter setting.
-
-```python 
-g = 3
-N= 8
-w = 3
-m = 0
+```python
+python demo_diff_chiral_48.py --dataset datasets\Schwinger\validation\ --model [model directory] --inpres 48 --multiple 2
 ```
 
-While Figure 8 is an extrapolation to N=12 large system, the parameter setting is.
 
-```python 
-g = 3
-N= 12
-w = 3
-m = 0
-```
 
-These two figures are both trying to up-scale from 48x48 resolution to 192x192 resolution.
-### datasets
-The two datasets contains N = 8 and N = 12 data correspondingly. The four npy files in each folder are used in the ipynb file.
+##Graphs
 
-The interpolation in these two figures both refers to bilinear interpolation.
-### ipynb file
-All eight graphs are plotted.
+Graphs can be plotted with datasets and python files within each graph folder.
 
-To identify transition region and show the region only. I have written the code to identify transition region on my own.
-It may not be satisfying.
 
-All the file directory may need to be adjusted.
-
-## Figure 7
-Figure 7 is done by separating the original training and validation datasets.
-
-Only part of w values are used in training and validation process. The rest unseen ones are used in the test.
-### error dataset
-The instruction of this error dataset is similar to that of Figure 5, 
-just that only x2, x3, x4 are included this time.
-### ipynb file
-The python file is also similar.
-
-All file directory may need to be adjusted.
-
-The bold words 'Whole Diagram' and 'Transition Region' on the Figure in overleaf are added through ppt.
-
-## Tables
-The current tables are established on Latex directly.
