@@ -81,10 +81,11 @@ if __name__ == '__main__':
         diff = np.divide(diff_abs, img_antisigma)
 
 
-        diffpath = 'C:\\Users\\robwa\\liif-main\\datasets\\Schwinger\\test\\partial_w\\' + str(args.multiple) + '_times\\'
-        #diffpath = 'C:\\Users\\robwa\\liif-main\\datasets\\Schwinger\\test\\N12\\'
-        #diffpath = 'C:\\Users\\robwa\\liif-main\\datasets\\Schwinger\\test\\diff_outside_w\\' + str(args.multiple) + '_times\\'
+        diffpath = 'datasets\\Schwinger\\test\\partial_w\\' + str(args.multiple) + '_times\\'
+        #diffpath = 'datasets\\Schwinger\\test\\N12\\'
+        #diffpath = 'datasets\\Schwinger\\test\\diff_outside_w\\' + str(args.multiple) + '_times\\'
         diffname = filename
         #difffull = diffpath + diffname
         difffull = diffpath + diffname[:-4] + '_diff'
+
         np.save(difffull, diff)
