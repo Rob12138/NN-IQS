@@ -84,3 +84,15 @@ python demo_diff_chiral_48.py --dataset datasets\Schwinger\validation\ --model [
 Graphs can be plotted with datasets and python files within each graph folder.
 
 
+
+##Citation
+
+For now, if you consider this work useful, please cite:
+
+arXiv:2509.20173 [quant-ph]
+(or arXiv:2509.20173v1 [quant-ph] for this version)
+https://doi.org/10.48550/arXiv.2509.20173
+
+
+
+
