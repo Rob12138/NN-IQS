@@ -1,5 +1,5 @@
 # NN-IQS
-This is a private share of datasets
+This is the repository for article AI-ehanced Quantum Simulation of Schwinger Model
 
 ## Figure 1
 Figure 1 is a show of general workflow of this project.
